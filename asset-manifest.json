@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/charlie-and-claudia/static/css/main.073c9b0a.css",
-    "main.js": "/charlie-and-claudia/static/js/main.bb8dbc33.js",
+    "main.css": "/charlie-and-claudia/static/css/main.65e534a2.css",
+    "main.js": "/charlie-and-claudia/static/js/main.0a143d81.js",
     "static/js/787.2fb79b00.chunk.js": "/charlie-and-claudia/static/js/787.2fb79b00.chunk.js",
-    "static/media/logo.svg": "/charlie-and-claudia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/taxigif.gif": "/charlie-and-claudia/static/media/taxigif.463811b1f2e4225af0b2.gif",
+    "static/media/icecream.jpg": "/charlie-and-claudia/static/media/icecream.2a5b1bbc755f01d530ef.jpg",
     "index.html": "/charlie-and-claudia/index.html",
-    "main.073c9b0a.css.map": "/charlie-and-claudia/static/css/main.073c9b0a.css.map",
-    "main.bb8dbc33.js.map": "/charlie-and-claudia/static/js/main.bb8dbc33.js.map",
+    "main.65e534a2.css.map": "/charlie-and-claudia/static/css/main.65e534a2.css.map",
+    "main.0a143d81.js.map": "/charlie-and-claudia/static/js/main.0a143d81.js.map",
     "787.2fb79b00.chunk.js.map": "/charlie-and-claudia/static/js/787.2fb79b00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.bb8dbc33.js"
+    "static/css/main.65e534a2.css",
+    "static/js/main.0a143d81.js"
   ]
 }
