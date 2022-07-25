@@ -1,0 +1,93 @@
+body {
+  background: white;
+}
+
+
+.navbar {
+}
+
+.App {
+  text-align: center;
+  background: white;
+}
+
+.logo-container {
+  position: relative;
+  text-align: center;
+}
+
+.background-rotated {
+  z-index: 0;
+  display:block;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  min-height: 150%;
+  background: #fcabab;
+  transform: rotate(-20deg);
+  left: -50%;
+  top: -10%;
+}
+
+.background-rotated:after {
+  mix-blend-mode: screen;
+}
+
+.App-logo {
+  z-index: 1;
+  height: 800px;
+  width: 1200px;
+  margin-top: 30px;
+  border-radius: 3px;
+  background-size: cover;
+  border: 4px #fcabab;
+  background-image: linear-gradient(
+    rgba(24, 22, 22, 0.3),
+    rgba(255, 255, 255, 0.1)
+  ), url(images/taxigif.gif);
+  background-repeat:repeat;
+}
+
+.App-logo-border {
+  z-index: 0;
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+  border: 8px solid #1d3107;
+  mix-blend-mode: difference;
+}
+
+.App-logo-text {
+    color: #ffffff;
+    z-index: 2;
+    font-family: 'Heebo';
+    font-size: 7em;
+    position: absolute;
+    font-weight: 650;
+    white-space:nowrap;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Background-Image {
+  background: url(images/icecream.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
