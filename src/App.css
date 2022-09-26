@@ -1,14 +1,5 @@
 body {
-  background: white;
-}
-
-
-.navbar {
-}
-
-.App {
-  text-align: center;
-  background: white;
+  background: #fcabab84;
 }
 
 .logo-container {
@@ -16,27 +7,13 @@ body {
   text-align: center;
 }
 
-.background-rotated {
-  z-index: 0;
-  overflow: hidden;
-  width: 100%;
-  min-height: 150%;
-  background: #fcabab;
-  transform: skew(-20deg);
-  left: -50%;
-}
-
-.background-rotated:after {
-  mix-blend-mode: screen;
-}
-
 .App-logo {
   z-index: 1;
   height: 800px;
   width: 1200px;
   margin-top: 30px;
-  border-radius: 3px;
-  border: solid white 2px;
+  border-radius: 6px;
+  border: solid #fcababb5 1px;
   background-size: cover;
   background-image: linear-gradient(
     rgba(24, 22, 22, 0.3),
@@ -45,11 +22,13 @@ body {
   background-repeat:repeat;
 }
 
+
+
 .App-logo-text {
     color: #ffffff;
     z-index: 2;
     font-family: 'Heebo';
-    font-size: 7em;
+    font-size: 9vmin;
     position: absolute;
     font-weight: 650;
     white-space:nowrap;
@@ -77,5 +56,16 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .App-logo-text {
+    font-size: 3em;
+  }
+  .App-logo  {
+    height: 280px;
+    width: 420px;
   }
 }
