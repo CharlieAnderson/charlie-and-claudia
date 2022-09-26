@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/charlie-and-claudia/static/css/main.65e534a2.css",
-    "main.js": "/charlie-and-claudia/static/js/main.0a143d81.js",
+    "main.css": "/charlie-and-claudia/static/css/main.e03723b0.css",
+    "main.js": "/charlie-and-claudia/static/js/main.e161860f.js",
     "static/js/787.2fb79b00.chunk.js": "/charlie-and-claudia/static/js/787.2fb79b00.chunk.js",
     "static/media/taxigif.gif": "/charlie-and-claudia/static/media/taxigif.463811b1f2e4225af0b2.gif",
     "static/media/icecream.jpg": "/charlie-and-claudia/static/media/icecream.2a5b1bbc755f01d530ef.jpg",
     "index.html": "/charlie-and-claudia/index.html",
-    "main.65e534a2.css.map": "/charlie-and-claudia/static/css/main.65e534a2.css.map",
-    "main.0a143d81.js.map": "/charlie-and-claudia/static/js/main.0a143d81.js.map",
+    "main.e03723b0.css.map": "/charlie-and-claudia/static/css/main.e03723b0.css.map",
+    "main.e161860f.js.map": "/charlie-and-claudia/static/js/main.e161860f.js.map",
     "787.2fb79b00.chunk.js.map": "/charlie-and-claudia/static/js/787.2fb79b00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65e534a2.css",
-    "static/js/main.0a143d81.js"
+    "static/css/main.e03723b0.css",
+    "static/js/main.e161860f.js"
   ]
 }
