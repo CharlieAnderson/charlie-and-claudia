@@ -1,5 +1,4 @@
-import navbar from './components/NavigationBar.js'
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
