@@ -1,5 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBarItem(props) {
-    return <a className='NavBarItem' href={props.route}>{props.title}</a>;
+    return <Link to={props.route} className='NavBarItem'>{props.title}</Link>
 }
