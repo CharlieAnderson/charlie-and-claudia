@@ -1,4 +1,6 @@
-import './App.css';
+import './styles/Shared.css';
+import './styles/Web.css';
+import './styles/Mobile.css';
 import {
   createBrowserRouter,
   RouterProvider,

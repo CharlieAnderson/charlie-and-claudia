@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 599px) {
+
+  .NavBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .NavLinks {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100%;
+    border-radius: 4px;
+    background-color:white
+  }
+
+  .NavBarItem {
+    padding: 4px;
+    margin: 4px;
+  } 
+
+  .NavBarItem:hover,
+  .NavBarItem:focus {
+    background-color: lightcoral;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 201, 175);
+  }
+  
+  .Card {
+    margin: 8px;
+    max-width: 90%;
+    max-height: 70%;
+    background: rgba(255, 246, 241, 0.8);
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(25, 25, 25, 0.107); 
+  }
+  
+  .ContentBody {
+    padding: 16px;
+    font-size: large;
+  }
+}

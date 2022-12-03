@@ -1,78 +1,3 @@
-
-
-.NavBar {
-  /* background-color: rgb(255, 196, 209); */
-  background-color: black;
-  display: flex;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 4px solid rgba(25, 25, 25, 0.01);
-}
-
-.NavHamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.NavHamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: black;
-}
-
-.NavBarItem {
-  color: black;
-  margin: 4px 12px;
-  text-decoration: none; 
-  background-color: #fc297f;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(255, 201, 175);
-  height: 700px;
-}
-
-.Card {
-  margin: 24px;
-  max-width: 50%;
-  max-height: 60%;
-  background: rgba(255, 246, 241, 0.8);
-  border-radius: 4px;
-  box-shadow: 0 10px 20px rgba(25, 25, 25, 0.107); 
-}
-
-.ContentBody {
-  padding: 16px;
-  font-size: large;
-}
-
-@media screen and (max-width: 599px) {
-
-  .NavLinks {
-    background-color: lightblue;
-
-  }
-
-  .NavBarItem {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
-
-  .NavBarItem:hover {
-    background-color: lightcoral;
-  }
-
-  .hide {
-    display: none;
-  }
-}
 @media screen and (min-width: 600px) {
 
   .NavBar {
@@ -93,6 +18,7 @@
     padding: 10px 40px;
     transition: 0.3s;
     border-radius: 4px;
+    background-color: #fc297f;
   }
 
   .NavBarItem:focus {
@@ -125,7 +51,7 @@
   }
 }
 
-.perspectiveLeft {
+/* .perspectiveLeft {
   -webkit-animation-name: perspectiveLeft;
   animation-name: perspectiveLeft;
 }
@@ -158,4 +84,4 @@
     -webkit-transform: perspective(800px) rotateY(-180deg);
     transform: perspective(800px) rotateY(-180deg);
   }
-}
+} */
