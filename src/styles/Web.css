@@ -1,9 +1,5 @@
 @media screen and (min-width: 600px) {
 
-  .NavBar {
-      margin-top: 40px;
-  }
-
   .NavLinks {
     display: block;
     position: static;
@@ -15,73 +11,126 @@
 
   .NavBarItem {
     display: inline-block;
+    position: relative;
     padding: 10px 40px;
-    transition: 0.3s;
     border-radius: 4px;
-    background-color: #fc297f;
+    font-size: 24px;
+    font-weight: 500;
   }
 
-  .NavBarItem:focus {
-    box-shadow: 0px 6px 10px -6px #fc297f;
-    transform: translateY(-0.1em);
-    animation-name: perspectiveLeft;
-    animation-duration: 1000ms;
+
+  .NavBarItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgb(48, 48, 48); */
+    background-color: #C4848B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
 
- .content:focus {
-    animation-name: perspectiveLeft;
-    animation-duration: 1000ms;
-    /* animation-duration: 1200ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards; */
-  }
-  
-  @keyframes cssAnimation {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateZ(-90deg);
-    }
+  .NavBarItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
+  .NavBarItem:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .NavBarItem:hover {
+    /* offset-x | offset-y | blur-radius | color */
+    /* text-shadow: 1px 2px 0px rgb(189, 160, 226); */
+  }
+
+  .photo-timeline {
+    display: inline-block;
+  }
+
+  .ContentPage {
+    margin: 20px 200px;
+    background: white;
+    height: 100%;
+    padding: 30px;
+    padding-bottom: 200px;
+    max-width: 1000px;
+    border-radius: 1px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: -3px 5px 10px 2px rgba(179, 166, 161, 0.308);
+  } 
+
+  .ContentPage img {
+    border: 1px solid rgba(0, 0, 0, 0.066);
+    display: inline-block;
+    min-width: 600px;
+    width: 100%;
+    max-height:auto;
+
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .ContentHeader {
+    font-size: 22px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: rgb(8, 0, 123);
+    border-bottom: solid rgb(8, 0, 123) 2px;
+    text-align: justify;
+    margin: 20px 50px;
+    overflow: hidden;
+  }
+
+
+  .ContentBody {
+    font-size: 18px;
+    font-family: "Assistant";
+    color: rgb(8, 0, 123);
+    text-align: justify;
+    margin: 0px 100px;
+    padding: 20px 50px;
+  }
+
+  .Timeline .ContentBody {
+    border-left: 1px solid #abaaed;
+    position: relative;
+  }
+
+  .Timeline .ContentBody::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    
+    background: white;
+    border: 1px solid #4e5ed3;
+    box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+  }
+
+
+.Left {
+  float: left;
+}
+
+.Right {
+  float: right;
+}
+
+#home .ContentHeader {
+  border: none;
+  text-align: center;
+}
+
+/* 
   .NavHamburger {
     display: none;
-  }
+  } */
 }
-
-/* .perspectiveLeft {
-  -webkit-animation-name: perspectiveLeft;
-  animation-name: perspectiveLeft;
-}
-@-webkit-keyframes perspectiveLeft {
-  0% {
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: perspective(800px) rotateY(0deg);
-    transform: perspective(800px) rotateY(0deg);
-  }
-
-  100% {
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: perspective(800px) rotateY(-180deg);
-    transform: perspective(800px) rotateY(-180deg);
-  }
-}
-@keyframes perspectiveLeft {
-  0% {
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: perspective(800px) rotateY(0deg);
-    transform: perspective(800px) rotateY(0deg);
-  }
-
-  100% {
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: perspective(800px) rotateY(-180deg);
-    transform: perspective(800px) rotateY(-180deg);
-  }
-} */

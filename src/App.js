@@ -12,6 +12,8 @@ import Page2 from "./routes/page2";
 import Page3 from "./routes/page3";
 import Page4 from "./routes/page4";
 import Page5 from "./routes/page5";
+import Page6 from "./routes/page6";
+import Page7 from "./routes/page7";
 import ErrorPage from "./routes/error";
 
 const router = createBrowserRouter([
@@ -44,6 +46,16 @@ const router = createBrowserRouter([
       {
         path: "/page5",
         element: <Page5/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/page6",
+        element: <Page6/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/page7",
+        element: <Page7/>,
         errorElement: <ErrorPage/>,
       }
     ], 

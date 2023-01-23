@@ -1,11 +1,33 @@
 import ContentCard from "../components/ContentCard"
+import ContentPage from "../components/ContentPage"
+import image from "../images/taxigif.gif"
+import Header from "../components/ContentHeader"
+import Body from "../components/ContentBody"
 
 export default function Page1() {
+  let content = [
+    <Header>We're getting married!
+    <Body>
+    And we cannot wait to share this day with you, our dearest family and friends, on September 3rd, 2023, at <a href="https://www.wythehotel.com/">The Wythe Hotel</a>. Please take a look around our website to learn more about our story and about our wedding weekend. See you in Brooklyn!
+    </Body>
+    Love,
+    <br/>
+    Charlie & Claudia
+    </Header>,
+    <br/>,
+    <br/>,
+    <br/>,
+
+    <Header>
+      add email registration here
+    </Header>
+  ]
+
   return (
     <div className="content">
-      <ContentCard
-      text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-      />
+      <ContentPage contentId="home" imgSrc={image}>
+        <div id="home" className='Content'>{content}</div>
+      </ContentPage>
     </div>
   );
 }
