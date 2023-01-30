@@ -1,0 +1,129 @@
+@media screen and (min-width: 600px) {
+
+  .NavLinks {
+    display: block;
+    position: static;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .NavBarItem {
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+
+  .NavBarItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgb(48, 48, 48); */
+    background-color: #C4848B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .NavBarItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .NavBarItem:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .NavBarItem:hover {
+    /* offset-x | offset-y | blur-radius | color */
+    /* text-shadow: 1px 2px 0px rgb(189, 160, 226); */
+  }
+
+  .photo-timeline {
+    display: inline-block;
+  }
+
+  .ContentPage img {
+    border: 1px solid rgba(0, 0, 0, 0.066);
+    display: inline-block;
+    min-width: 600px;
+    width: 100%;
+    max-height:auto;
+
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .photo-timeline .ContentPage {
+    max-width: 650px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .photo-timeline .ContentPage img {
+    max-width: 600px;
+  }
+
+  .Left {
+    float: left;
+  }
+
+  .Right {
+    float: right;
+  }
+
+  #home .ContentHeader {
+    border: none;
+    text-align: center;
+  }
+
+  .ContentBody {
+    max-width: 600px;
+    min-width: 400px;
+  }
+
+  .NavHamburger {
+    display: none;
+  }
+
+  .NavBarItem:hover {
+    color: rgb(84, 87, 255);
+  }
+
+  .NavBarItem:focus{
+    color: rgb(84, 87, 255);
+  }
+
+
+  .filled-button:hover{
+    color: rgb(255, 210, 239);
+
+  }
+  .filled-button:active {
+    color:rgb(255, 210, 239);
+  }  
+  .filled-button:hover:active {
+    color: rgb(255, 210, 239);
+    box-shadow: 0 0;
+    transition: 300ms;
+  }
+
+
+  .button-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+}
