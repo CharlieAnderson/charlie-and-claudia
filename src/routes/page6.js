@@ -6,7 +6,7 @@ import Body from "../components/ContentBody"
 
 export default function Page6() {
   let content = [
-    "blank"
+    "Coming soon!"
   ]
 
   return (

@@ -1,6 +1,10 @@
 import ContentPage from "../components/ContentPage"
 import image from "../images/pic10.jpg"
+import image2 from "../images/sf1.jpeg"
+import image3 from "../images/giants.JPG"
 import castro_gif from "../images/castro.gif"
+import image4 from "../images/italy.jpeg"
+import image5 from "../images/nyc.jpg"
 import Header from "../components/ContentHeader"
 import Body from "../components/ContentBody"
 
@@ -42,25 +46,25 @@ export default function Page4() {
       <ContentPage contentId="story">
         <div id="story" className='Content'>{content0}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image2}>
         <div id="story" className='Content'>{content1}</div>
       </ContentPage>
       <ContentPage contentId="story" imgSrc={castro_gif}>
         <div id="story" className='Content'>{content2}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image3}>
         <div id="story" className='Content'>{content3}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image4}>
         <div id="story" className='Content'>{content4}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image5}>
         <div id="story" className='Content'>{content5}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image5}>
         <div id="story" className='Content'>{content6}</div>
       </ContentPage>
-      <ContentPage contentId="story" imgSrc={image}>
+      <ContentPage contentId="story" imgSrc={image5}>
         <div id="story" className='Content'>{content7}</div>
       </ContentPage>
     </div>

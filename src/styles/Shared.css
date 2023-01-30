@@ -13,10 +13,15 @@ body {
   text-align:center;
 }
 
+img {
+  max-width: 400px;
+}
+
 .HeaderBar {
   /* display: flex;
   align-items: center;
   justify-content: space-around; */
+  padding: 0px 10px;
   display: inline-block;
   margin: 0 auto;
   margin-top: 26px;
@@ -25,9 +30,6 @@ body {
   font-weight: 500;
   font-size: 56px;
   color:rgb(8, 0, 123);
-  background-image: url('../images/flower1.png');
-  background-repeat: no-repeat;
-  background-position: center;
   border-bottom: 8px solid #C4848B;
   border-top: 8px solid #C4848B;
   box-shadow: 8px 8px;
@@ -51,7 +53,7 @@ body {
   align-items: center;
 }
 
-/* .NavHamburger {
+.NavHamburger {
   padding-right: 20px;
   cursor: pointer;
 }
@@ -62,16 +64,6 @@ body {
   height: 5px;
   margin-bottom: 10px;
   background-color: black;
-} */
-
-.NavLinks {
-  display: block;
-  position: static;
-  width: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  background: none;
-  
 }
 
 .NavBarItem {
@@ -79,13 +71,77 @@ body {
   color:rgb(8, 0, 123);
   display: inline-block;
   transition: 0.3s;
-  border-radius: 4px;
   text-decoration: none;
 }
 
 .content {
   display: flex;
   justify-content: center;
+}
+
+.ContentPage {
+  margin: 20px 200px;
+  background: white;
+  height: 100%;
+  padding: 30px;
+  padding-bottom: 50px;
+  max-width: 1000px;
+  border-radius: 1px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: -3px 5px 10px 2px rgba(179, 166, 161, 0.308);
+} 
+
+.ContentBody {
+  font-size: 18px;
+  font-family: "Assistant";
+  color: rgb(8, 0, 123);
+  text-align: justify;
+  padding: 20px 50px;
+  max-width: 400px;
+}
+
+.Timeline .ContentBody {
+  border-left: 1px solid #abaaed;
+  margin: 0px 100px;
+  position: relative;
+}
+
+.Timeline .ContentBody::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+
+}
+
+.Bullets li {
+  width: 100%;
+  margin-left: 65px;
+  text-align: left;
+}
+
+.ContentHeader {
+  font-size: 22px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  color: rgb(8, 0, 123);
+  border-bottom: solid rgb(8, 0, 123) 2px;
+  text-align: justify;
+  margin: 20px 50px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
 }
 
 .L-Floral {
@@ -104,4 +160,31 @@ body {
 
 #home {
   font-family: 'Assistant', sans-serif;
+}
+
+.filled-button {
+  font-size: 24px;
+  font-weight: bold;
+  border: solid #C4848B 5px;
+  background-color: #C4848B;
+  border-radius: 8px;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 10px 10px;
+  transition: 300ms;
+}
+
+
+.Left {
+  float: left;
+}
+
+.Right {
+  float: right;
+}
+
+
+.Center {
+  float: none;
+  margin: 0 auto;
 }

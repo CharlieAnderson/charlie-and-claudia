@@ -6,7 +6,7 @@ import Body from "../components/ContentBody"
 
 export default function Page7() {
   let content = [
-    <Body>We'll be mailing out wedding invites a few months before the wedding. When those go out, we'll also be updating this page with an online RSVP form for your convenience!</Body>
+    <Body>We'll be mailing out wedding invites closer to the wedding. When those go out, we'll also be updating this page with an online RSVP form for your convenience!</Body>
   ]
 
   return (

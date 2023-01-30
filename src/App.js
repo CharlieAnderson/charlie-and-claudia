@@ -24,37 +24,37 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Page1/> },
       {
-        path: "/page1",
+        path: "/home",
         element: <Page1/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page2",
+        path: "/schedule",
         element: <Page2/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page3",
+        path: "/travel",
         element: <Page3/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page4",
+        path: "/story",
         element: <Page4/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page5",
+        path: "/registry",
         element: <Page5/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page6",
+        path: "/recommendations",
         element: <Page6/>,
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/page7",
+        path: "/RSVP",
         element: <Page7/>,
         errorElement: <ErrorPage/>,
       }

@@ -1,40 +1,52 @@
 
 @media screen and (max-width: 599px) {
 
+  .Content {
+  }
+
+  .HeaderBar {
+      margin: 8px;
+      font-size: 36px;
+  }
+
+  .R-Floral {
+    display: none;
+  }
+
+  .L-Floral {
+    display: none;
+  }
+
   .NavBar {
-    position: fixed;
+    position: fixed; 
     bottom: 0;
+    z-index: 100;
     width: 100%;
-    background-color: white;
   }
 
   .NavLinks {
+    position:relative;
     display: flex;
     justify-content: space-evenly;
     margin: 0;
     width: 100%;
-    border-radius: 4px;
-    background-color:white
+    background-color:rgb(255, 214, 221);
   }
 
   .NavBarItem {
-    padding: 4px;
-    margin: 4px;
+    padding: 10px;
   } 
+
 
   .NavBarItem:hover,
   .NavBarItem:focus {
-    background-color: lightcoral;
+    background-color: rgb(237, 164, 255);
   }
 
-  .hide {
-    display: none;
-  }
 
   .content {
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 201, 175);
   }
   
   .Card {
@@ -45,9 +57,27 @@
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(25, 25, 25, 0.107); 
   }
+
+  .ContentHeader {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: rgb(8, 0, 123);
+    border-bottom: solid rgb(8, 0, 123) 2px;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 18px;
+    overflow: hidden;
+  }
   
   .ContentBody {
     padding: 16px;
     font-size: large;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .NavHamburger {
+    float: right;
+
   }
 }

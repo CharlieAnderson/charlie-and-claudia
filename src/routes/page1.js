@@ -18,9 +18,9 @@ export default function Page1() {
     <br/>,
     <br/>,
 
-    <Header>
-      add email registration here
-    </Header>
+    // <Header>
+    //   add email registration here
+    // </Header>
   ]
 
   return (

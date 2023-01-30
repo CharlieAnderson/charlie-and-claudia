@@ -52,18 +52,6 @@
     display: inline-block;
   }
 
-  .ContentPage {
-    margin: 20px 200px;
-    background: white;
-    height: 100%;
-    padding: 30px;
-    padding-bottom: 200px;
-    max-width: 1000px;
-    border-radius: 1px;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: -3px 5px 10px 2px rgba(179, 166, 161, 0.308);
-  } 
-
   .ContentPage img {
     border: 1px solid rgba(0, 0, 0, 0.066);
     display: inline-block;
@@ -75,62 +63,67 @@
     font-size: 22px;
   }
 
-  .ContentHeader {
-    font-size: 22px;
-    font-family: "Playfair Display";
-    font-weight: bold;
-    color: rgb(8, 0, 123);
-    border-bottom: solid rgb(8, 0, 123) 2px;
-    text-align: justify;
-    margin: 20px 50px;
-    overflow: hidden;
+  .photo-timeline .ContentPage {
+    max-width: 650px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .photo-timeline .ContentPage img {
+    max-width: 600px;
   }
 
+  .Left {
+    float: left;
+  }
+
+  .Right {
+    float: right;
+  }
+
+  #home .ContentHeader {
+    border: none;
+    text-align: center;
+  }
 
   .ContentBody {
-    font-size: 18px;
-    font-family: "Assistant";
-    color: rgb(8, 0, 123);
-    text-align: justify;
-    margin: 0px 100px;
-    padding: 20px 50px;
+    max-width: 600px;
+    min-width: 400px;
   }
 
-  .Timeline .ContentBody {
-    border-left: 1px solid #abaaed;
-    position: relative;
-  }
-
-  .Timeline .ContentBody::before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    
-    background: white;
-    border: 1px solid #4e5ed3;
-    box-shadow: 3px 3px 0px #bab5f8;
-    box-shadow: 3px 3px 0px #bab5f8;
-    border-radius: 50%;
-    position: absolute;
-    left: -10px;
-  }
-
-
-.Left {
-  float: left;
-}
-
-.Right {
-  float: right;
-}
-
-#home .ContentHeader {
-  border: none;
-  text-align: center;
-}
-
-/* 
   .NavHamburger {
     display: none;
-  } */
+  }
+
+  .NavBarItem:hover {
+    color: rgb(84, 87, 255);
+  }
+
+  .NavBarItem:focus{
+    color: rgb(84, 87, 255);
+  }
+
+
+  .filled-button:hover{
+    color: rgb(255, 210, 239);
+
+  }
+  .filled-button:active {
+    color:rgb(255, 210, 239);
+  }  
+  .filled-button:hover:active {
+    color: rgb(255, 210, 239);
+    box-shadow: 0 0;
+    transition: 300ms;
+  }
+
+
+  .button-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
 }
