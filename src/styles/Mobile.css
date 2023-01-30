@@ -47,8 +47,19 @@
   .content {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+
+  .ContentPage {
+    max-width: 100%;
+    margin: 0px 10px;
+    padding-bottom: 80px;
   }
   
+  img {
+    max-width: 100%;
+  }
+
   .Card {
     margin: 8px;
     max-width: 90%;
@@ -66,7 +77,6 @@
     text-align: center;
     margin: 20px 0px;
     font-size: 18px;
-    overflow: hidden;
   }
   
   .ContentBody {
