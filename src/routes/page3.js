@@ -3,7 +3,10 @@ import image from "../images/pic4.jpg"
 import Header from "../components/ContentHeader"
 import Body from "../components/ContentBody"
 
+
 export default function Page3() {
+  const googleKey = process.env.REACT_APP_GOOGLE_API_KEY
+
   let content = [
     <Body>
       There are many wonderful options for housing in the New York City area. While we have a discounted block of rooms available for you to book at The Wythe Hotel, please free to do what is the most comfortable for you. We just want you here to celebrate with us - no matter where you stay!
@@ -69,7 +72,7 @@ export default function Page3() {
     className="map"
     frameborder="0"
     referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpRg9j848HuRZygkfLS-4zKCEiYEDX6CI&q=The+Williamsburg+Hotel"
+    src={`https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=The+Williamsburg+Hotel`}
     allowfullscreen>
     </iframe>,
       
@@ -88,7 +91,7 @@ export default function Page3() {
     className="map"
     frameborder="0"
     referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpRg9j848HuRZygkfLS-4zKCEiYEDX6CI&q=The+Hoxton+Hotel"
+    src={`https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=The+Hoxton+Hotel+Williamsburg`}
     allowfullscreen>
     </iframe>,
       
@@ -107,7 +110,7 @@ export default function Page3() {
     className="map"
     frameborder="0"
     referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpRg9j848HuRZygkfLS-4zKCEiYEDX6CI&q=The+Box+House+Hotel"
+    src={`https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=The+Box+House+Hotel`}
     allowfullscreen>
     </iframe>,
       
@@ -126,7 +129,7 @@ export default function Page3() {
     className="map"
     frameborder="0"
     referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCpRg9j848HuRZygkfLS-4zKCEiYEDX6CI&q=Hampton+Inn+Brooklyn%2FDowntown"
+    src={`https://www.google.com/maps/embed/v1/place?key=${googleKey}&q=Hampton+Inn+Brooklyn%2FDowntown`}
     allowfullscreen>
     </iframe>,
       <br/>,
