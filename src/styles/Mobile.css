@@ -54,7 +54,7 @@
   .ContentPage {
     max-width: 100%;
     margin: 0px 10px;
-    padding-bottom: 80px;
+    margin-bottom: 200px;
   }
   
   img {
@@ -109,4 +109,5 @@
     margin: auto;
     margin-left: 12px;
   }
+
 }

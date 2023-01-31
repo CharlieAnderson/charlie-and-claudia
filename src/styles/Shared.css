@@ -81,6 +81,7 @@ img {
 
 .ContentPage {
   margin: 20px 200px;
+  margin-bottom: 100px;
   background: white;
   height: 100%;
   padding: 30px;
