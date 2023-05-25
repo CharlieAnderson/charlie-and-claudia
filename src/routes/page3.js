@@ -53,7 +53,7 @@ export default function Page3() {
         <br/>
         <br/>
         <div className="button-container">
-          <a className="Center filled-button" href="https://www.mews.li/distributor/6b87e134-8c75-468a-82d4-aca900c43c70?mewsAvailabilityBlockId=dd38cc90-9785-4f46-927a-af26012e88fd"  target="_blank">Our Room-Block portal</a>
+          <a className="Center filled-button" href="https://app.mews.com/distributor/6b87e134-8c75-468a-82d4-aca900c43c70?mewsAvailabilityBlockId=dd38cc90-9785-4f46-927a-af26012e88fd"  target="_blank">Our Room-Block portal</a>
         </div>
       </Body>,
       
