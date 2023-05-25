@@ -88,10 +88,19 @@
     text-align: center;
   }
 
+  .ContentPage {
+    min-width: 600px;
+  }
+
   .ContentBody {
     max-width: 600px;
     min-width: 400px;
   }
+
+  /* .Answer {
+    max-width: 600px;
+    min-width: 400px;
+  } */
 
   .NavHamburger {
     display: none;
@@ -118,7 +127,6 @@
     box-shadow: 0 0;
     transition: 300ms;
   }
-
 
   .button-container {
     width:100%;

@@ -137,6 +137,31 @@ img {
   text-align: left;
 }
 
+.Question {
+  margin: 10px 20px;
+  font-size: 22px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  color: rgb(8, 0, 123);
+  overflow: hidden;
+  text-align: left;
+  max-width: 600px;
+}
+
+.Answer {
+  font-size: 18px;
+  font-family: "Assistant";
+  color: rgb(8, 0, 123);
+  padding: 10px 20px;
+  text-align: left;
+  max-width: 600px;
+}
+
+
+.Underline {
+  border-bottom: solid rgb(8, 0, 123) 2px;
+}
+
 .map {
   height: 400px;
   width: 100%;
@@ -183,5 +208,7 @@ img {
 
 
 .Center {
+  float:unset;
+  text-align:center;
   margin: auto;
 }

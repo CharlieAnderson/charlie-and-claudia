@@ -14,6 +14,7 @@ import Page4 from "./routes/page4";
 import Page5 from "./routes/page5";
 import Page6 from "./routes/page6";
 import Page7 from "./routes/page7";
+import Page8 from "./routes/page8";
 import ErrorPage from "./routes/error";
 
 const router = createBrowserRouter([
@@ -54,8 +55,13 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/RSVP",
+        path: "/rsvp",
         element: <Page7/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/faq",
+        element: <Page8/>,
         errorElement: <ErrorPage/>,
       }
     ], 

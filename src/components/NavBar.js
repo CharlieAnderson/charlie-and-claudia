@@ -13,8 +13,10 @@ export default function NavBar(props) {
                 {/* <NavBarItem title="Story" route="/story" /> */}
                 <NavBarItem title="Registry" route="/registry" />
                 {/* <NavBarItem title="Recommendations" route="/recommendations" /> */}
-                <NavBarItem title="RSVP" route="/RSVP" />
+                <NavBarItem title="RSVP" route="/rsvp" />
+                <NavBarItem title="FAQ" route="/faq" />
             </div>
+            <div className='' />
             <img className="R-Floral" src={floral2}></img>
         </div>
 }
